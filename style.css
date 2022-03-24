@@ -1,34 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root{
-    --bgColor:#fae6d9;
-    --formColor: linear-gradient(#47b6cb7, #182848);
-    --txtColor:#d42a2a;
-    --txtSecondaryColor:#ffff00;
+    --bgColor:#000834;
+    --formColor: linear-gradient(#fb5b8d, #a7026d);
+    --txtColor:#ffffff;
+    --txtSecondaryColor:#A2BDF2;
     --inputBoxBg: transparent;
-    --txtBtnColor:#f1b5b5;
-    --txtBtnSecondaryColor:#000000;
-    --btnBorderColor:#352424;
+    --txtBtnColor:#ffffff;
+    --txtBtnSecondaryColor:#ffffff;
+    --btnBorderColor:#ff8d6b;
     --btnBgColor: transparent;
-    --btnBgSecondaryColor:#5e0909;
+    --btnBgSecondaryColor: #FB5B8D;
 }
 body{
     margin: 0;
     padding:0;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background: var(--bgColor);
+}
+nav ul{
+    color: #FB5B8D;
+    display: flex;
+    justify-content: space-between;
+    margin:2em;
+    list-style: none;
+    font-weight: 600;
 }
 .login-box{
     position: absolute;
-    top:50%;
+    top:70%;
     left:50%;
     width:400px;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    box-shadow: 0 15px 25px rgba(194, 37, 194, 0.308);
     border-radius:10px;
     background: var(--formColor);
 }
-.login-box h2{
-    margin: 0 0 30px;
+.login-box h1{
+    margin: 1em 1em ;
     padding: 0;
     color: var(--txtColor);
     text-align: center;
@@ -51,7 +60,7 @@ body{
     position: absolute;
     top:0;
     left:0;
-    padding: 10px 0;
+    padding: 0.5em;
     color: var(--txtColor);
     pointer-events: none;
     transition: 0.5s;
@@ -67,6 +76,7 @@ body{
     position: relative;
     display:inline-block;
     padding: 10px 20px;
+    margin: 1em;
     color: var(--txtBtnColor);
     font-size: 16px;
     text-decoration: none;
