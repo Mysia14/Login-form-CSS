@@ -80,11 +80,11 @@ nav ul{
     color: var(--txtBtnColor);
     font-size: 16px;
     text-decoration: none;
-    text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
     margin-top: 40px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-weight: bolder;
 }
 .login-box a:hover{
     background: var(--btnBgSecondaryColor);
